@@ -28,6 +28,11 @@
 })();
 
 //2A
+(function () { 
+    document.querySelector("#services").querySelectorAll("span.material-symbols-outlined").forEach(icon => {
+    icon.style.color = "#47C714";
+});
+})();
 
 //2B
 
