@@ -18,5 +18,8 @@
 })();
 
 //1D
+(function () { 
+    document.querySelector('a[href="contact.html"]').remove();
+})();
 
 //1E
