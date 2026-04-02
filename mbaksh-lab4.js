@@ -35,6 +35,9 @@
 })();
 
 //2B
+(function () { 
+    document.querySelector("#services > div > div > div:nth-child(1) > span").textContent = "ads_click";
+})();
 
 //3A
 
