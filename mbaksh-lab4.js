@@ -23,3 +23,14 @@
 })();
 
 //1E
+(function () { 
+    document.querySelector('.bg-gray-800.text-white.p-4.mt-12').style.backgroundColor = "#2563EB"
+})();
+
+//2A
+
+//2B
+
+//3A
+
+//3B
