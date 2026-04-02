@@ -40,5 +40,11 @@
 })();
 
 //3A
+(function() {
+    const container = document.querySelector("#solutions .grid");
+    if (window.innerWidth >= 1024) {
+        container.style.gridTemplateColumns = "repeat(4, 1fr)";
+    }
+})();
 
 //3B
