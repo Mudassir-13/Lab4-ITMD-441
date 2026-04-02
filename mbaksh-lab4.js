@@ -48,3 +48,6 @@
 })();
 
 //3B
+(function() {
+    document.querySelector('img[alt="Musicians"]').src = "https://fastly.picsum.photos/id/453/400/300.jpg?hmac=19cErdap35ZD3TFJZzBb6kEwO8dGJC90VTCHvuabLf0";
+})();
