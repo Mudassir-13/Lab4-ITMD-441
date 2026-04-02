@@ -23,8 +23,18 @@
 })();
 
 //1E
-(function () { 
-    document.querySelector('.bg-gray-800.text-white.p-4.mt-12').style.backgroundColor = "#2563EB"
+(function() {
+    const nav = document.querySelector("header");
+    if (nav) {
+        nav.style.backgroundColor = "#1F2937"; 
+    }
+})();
+
+//1F
+(function() {
+    document.querySelectorAll("h2").forEach(function(heading) {
+        heading.style.textAlign = "center";
+    });
 })();
 
 //2A
@@ -35,15 +45,27 @@
 })();
 
 //2B
-(function () { 
-    document.querySelector("#services > div > div > div:nth-child(1) > span").textContent = "ads_click";
+(function() {
+    const digitalIcon = document.querySelector('span[data-icon="digital"]');
+    if (digitalIcon) {
+        digitalIcon.textContent = "ads_click";
+    }
 })();
 
 //3A
 (function() {
-    const container = document.querySelector("#solutions .grid");
-    if (window.innerWidth >= 1024) {
-        container.style.gridTemplateColumns = "repeat(4, 1fr)";
+    const grid = document.querySelector('[data-section="product_cards"]');
+    if (grid) {
+        function applyGrid() {
+            if (window.innerWidth >= 1024) {
+                grid.style.display = "grid";
+                grid.style.gridTemplateColumns = "repeat(4, 1fr)";
+            } else {
+                grid.style.gridTemplateColumns = "";
+            }
+        }
+        applyGrid();
+        window.addEventListener("resize", applyGrid);
     }
 })();
 
